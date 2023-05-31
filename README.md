@@ -1,7 +1,9 @@
 # Reproducible package for _"Temporal Stability on Human Activity Recognition based on Wi-Fi CSI"_
 
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/GeoTecINIT/stability-csi-har/)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoTecINIT/stability-csi-har/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/zenodo/10.5281/zenodo.7991716/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7991716.svg)](https://doi.org/10.5281/zenodo.7991716)
+
 
 This repository is the reproducibility package for the paper _“Temporal Stability on Human Activity Recognition based on Wi-Fi CSI"_, submitted to the 13th International Conference on Indoor Positioning and Indoor Navigation (IPIN 2023).
 
