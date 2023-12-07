@@ -2,10 +2,13 @@
 
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/GeoTecINIT/stability-csi-har/)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/zenodo/10.5281/zenodo.7991716/)
+[![Paper DOI](https://img.shields.io/badge/Paper%20DOI-10.1109%2FIPIN57070.2023.10332214__28-yellow.svg)](https://doi.org/10.1109/IPIN57070.2023.10332214)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7991716.svg)](https://doi.org/10.5281/zenodo.7991716)
 
 
 This repository is the reproducibility package for the paper _“Temporal Stability on Human Activity Recognition based on Wi-Fi CSI"_, submitted to the 13th International Conference on Indoor Positioning and Indoor Navigation (IPIN 2023).
+
+> M. Matey-Sanz, J. Torres-Sospedra and A. Moreira, "Temporal Stability on Human Activity Recognition based on Wi-Fi CSI," 2023 13th International Conference on Indoor Positioning and Indoor Navigation (IPIN), Nuremberg, Germany, 2023, pp. 1-6, doi: 10.1109/IPIN57070.2023.10332214.
 
 You can explore the data and code used to obtain the results presented in the paper. To properly view the Jupyter Notebook files with their rendered figures, click on the "nbviewer" badge above.
 
