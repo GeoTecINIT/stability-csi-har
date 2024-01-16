@@ -47,7 +47,8 @@ docker run -it -p 8888:8888 stability-csi-har-rp
 ### Reproduce the analysis
 Open the desired Jupyter Notebook (*.ipynb) file. The notebook contains the code used for the analysis and its outputs. You can execute the code to reproduce the obtained results presented in the paper.
 
-> **Note**: when executing code with a component of randomness (i.e., ML models training), the obtained results could be slightly different than the reported ones. Notwithstanding, the conclusions should be similar as the reported ones.
+> [!NOTE]
+> When executing code with a component of randomness (i.e., ML models training), the obtained results could be slightly different than the reported ones. Notwithstanding, the conclusions should be similar as the reported ones.
 
 
 ## Repository structure
@@ -60,9 +61,13 @@ Common files:
 Jupyter Notebooks:
 
 - [`01.1_stanwifi-evaluation.ipynb`](./01.1_stanwifi-evaluation.ipynb): Jupyter Notebook containing the code for evaluating the proposed preprocessing pipeline and the CNN model using the [StanWiFi dataset](https://github.com/ermongroup/Wifi_Activity_Recognition) and a 10-fold cross validation. Results are stored in [`02_RESULTS/01_STANWIFI/01_MODEL-REPORTS/reports.json`](./02_RESULTS/01_STANWIFI/01_MODEL-REPORTS/reportS.json). The summary results at the end are the ones incorporated in **Table III** (StanWiFi > This work) of the paper.
-  > **Note**: to reproduce this notebook, please follow the [instructions](./01_DATA/01_STANWIFI/README.md) to download and setup the StanWiFi dataset.
+> [!TIP]
+> To reproduce this notebook, please follow the [instructions](./01_DATA/01_STANWIFI/README.md) to download and setup the StanWiFi dataset.
 - [`01.2_multi-env-evaluation.ipynb`](./01.2_multi-env-evaluation.ipynb): Jupyter Notebook containing the code for evaluating the proposed preprocessing pipeline and the CNN model using the [multi-environment dataset](https://doi.org/10.1016/J.DIB.2020.106534) and a 10-fold cross validation. Results are stored in [`02_RESULTS/02_MULTI-ENV/01_MODEL-REPORTS/e1-reports.json`](./02_RESULTS/02_MULTI-ENV/01_MODEL-REPORTS/e1-reports.json) and [`02_RESULTS/02_MULTI-ENV/01_MODEL-REPORTS/e2-reports.json`](./02_RESULTS/02_MULTI-ENV/01_MODEL-REPORTS/e2-reports.json) for _ENVIRONMENT 1_ and _ENVIRONMENT 2_, respectively. The summary results at the end are the ones incorporated in **Table III** (Multi-environment (E1/E2) > This work) of the paper.
-  > **Note**: to reproduce this notebook, please follow the [instructions](./01_DATA/01_MULTI-ENV/README.md) to download and setup the multi-environment dataset.
+  
+> [!TIP]
+> To reproduce this notebook, please follow the [instructions](./01_DATA/01_MULTI-ENV/README.md) to download and setup the multi-environment dataset.
+  
 - [`02_collected-data-processing.ipynb`](./02_collected-data-processing.ipynb): Jupyter Notebook containing the code for preprocessing the collected dataset. The notebook loads the data in [`01_DATA/03_COLLECTED-DATASET/01_RAW`](./01_DATA/03_COLLECTED-DATASET/01_RAW) and generates four labelled datasets (_D1_, _D2_, _D3_ and _D4_) in [`01_DATA/03_COLLECTED-DATASET/02_LABELLED`](./01_DATA/03_COLLECTED-DATASET/02_LABELLED). The data is labelled accordingly to the activity the user was performing at each moment: _seated_rx_, _standing_up_rx_, _walking_tx_, _turn_tx_, _sitting_down_tx_, _seated_tx_, _standing_up_tx_, _walking_rx_, _turn_rx_ and _sitting_down_rx_. It also aranges the data in each dataset in windows of 50 samples with 50% overlap in [`01_DATA/03_COLLECTED-DATASET/03_WINDOWED`](./01_DATA/03_COLLECTED-DATASET/03_WINDOWED). It also contains the **Table II** (samples per activity and dataset) of the paper.
 - [`03_evaluation-localized-har.ipynb`](./03_evaluation-localized-har.ipynb): Jupyter Notebook containing the code to evaluate the classification accuracy of the CNN model using five evaluation approaches:
   - 10-fold cross validation: results stored in [`02_RESULTS/03_COLLECTED-DATASET/01_MODEL-REPORTS/cv_report.json`](./02_RESULTS/03_COLLECTED-DATASET/01_MODEL-REPORTS/cv_report.json).
@@ -106,3 +111,7 @@ The documents in this repository are licensed under [Creative Commons Attributio
 All contained code is licensed under the [Apache License 2.0](./LICENSE).
 
 All data used in this repository is licensed under [Open Data Commons Attribution License](http://opendatacommons.org/licenses/by/1.0/).
+
+## Acknowledgements
+
+This work has been funded by the Spanish Ministry of Universities [grants FPU19/05352 and EST23/00320] and by MCIN/AEI/10.13039/501100011033 [grant PID2020-120250RB-I00].
